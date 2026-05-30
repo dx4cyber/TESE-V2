@@ -1,8 +1,8 @@
 import { defineConfig } from '@tanstack/start/config'
-import netlify from 'vinxi/adapter/netlify' // Import yang bener dari vinxi
 
 export default defineConfig({
   start: {
-    adapter: netlify(), // Pakai adapter ini
+    // Kita hapus dulu adapter-nya biar build-nya nggak error
+    // Nanti kita tambahin lagi kalau udah ketemu adapter yang bener
   },
 })
